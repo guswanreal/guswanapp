@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-14",
+  "version": "0.2.0",
+  "versionCode": 2,
+  "apk_sha256": "2807ca1240cbb5da3d6cf7464657c47eec16bf39bd1d48ec1fec8a41177d1750",
+  "apk_bytes": 56761975,
+  "unit_suites": [
+    {
+      "suite": "com.guswan.motion.ProjectTest",
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "com.guswan.motion.EditorStateTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "com.guswan.motion.AdvancedAnimationTest",
+      "tests": 14,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "device_tests": [
+    {
+      "class": "com.guswan.motion.AdvancedWorkspaceTest",
+      "test": "homeStudioGraphFlowTimeRemapAndProjectRestoration",
+      "passed": true,
+      "status": 0
+    },
+    {
+      "class": "com.guswan.motion.EditorFlowTest",
+      "test": "createTextAnimateDuplicateDeleteUndoAndReloadExample",
+      "passed": true,
+      "status": 0
+    },
+    {
+      "class": "com.guswan.motion.AdvancedMediaTest",
+      "test": "projectLibraryRestoresIndependentProjectsAndDeletesOnlyChosenId",
+      "passed": true,
+      "status": 0
+    },
+    {
+      "class": "com.guswan.motion.AdvancedMediaTest",
+      "test": "videoFramesFollowReverseAndFreezeInRenderer",
+      "passed": true,
+      "status": 0
+    },
+    {
+      "class": "com.guswan.motion.AdvancedMediaTest",
+      "test": "perspectiveMeshCameraAndAnimationChangeRenderedPixels",
+      "passed": true,
+      "status": 0
+    },
+    {
+      "class": "com.guswan.motion.AdvancedMediaTest",
+      "test": "actualBundledFaceModelTracksMovingVideoToThreeAxisKeyframes",
+      "passed": true,
+      "status": 0
+    },
+    {
+      "class": "com.guswan.motion.VideoExportTest",
+      "test": "encodedMp4ContainsThirtyAnimatedFramesWithExpectedDimensions",
+      "passed": true,
+      "status": 0
+    }
+  ],
+  "palette_ui_retest": [
+    {
+      "class": "com.guswan.motion.AdvancedWorkspaceTest",
+      "test": "homeStudioGraphFlowTimeRemapAndProjectRestoration",
+      "passed": true,
+      "status": 0
+    },
+    {
+      "class": "com.guswan.motion.EditorFlowTest",
+      "test": "createTextAnimateDuplicateDeleteUndoAndReloadExample",
+      "passed": true,
+      "status": 0
+    }
+  ],
+  "final_apk_rotation_and_workspace_retest": [
+    {
+      "class": "com.guswan.motion.AdvancedWorkspaceTest",
+      "test": "homeStudioGraphFlowTimeRemapAndProjectRestoration",
+      "passed": true,
+      "status": 0
+    }
+  ],
+  "lint": {
+    "errors": 0,
+    "warnings": 4,
+    "warning_type": "UseKtx"
+  },
+  "emulator": {
+    "api": 30,
+    "android": "11",
+    "abi": "x86_64",
+    "kvm": false,
+    "portrait": "720x1280",
+    "landscape": "1280x720",
+    "density": 280
+  },
+  "visual_checks": {
+    "portrait": true,
+    "landscape": true,
+    "font_200_home_and_guide": true,
+    "keyboard_tab_enter_escape": true,
+    "visible_focus": true
+  },
+  "rotation": {
+    "activity_retained": true,
+    "project_retained": true,
+    "new_anr_in_final_retest": false,
+    "earlier_focus_event_timeout": "5007ms; main thread idle in nativePollOnce; not proven sole cause"
+  },
+  "physical_phone_tested": false,
+  "talkback_full_traversal_tested": false,
+  "all_oem_codecs_tested": false,
+  "new_task_restore_tested": false,
+  "scope_limits": [
+    "basic painter-sorted 3D meshes, not Blender parity",
+    "shared transform easing, not per-property independent temporal handles",
+    "5 fps head pose estimation, no calibrated depth/face mesh/scene camera solve",
+    "video and MP4 without audio or optical flow",
+    "Adobe/Alight project/plugin formats unsupported"
+  ]
+}
